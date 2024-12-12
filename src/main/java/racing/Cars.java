@@ -3,30 +3,26 @@ package racing;
 import java.util.List;
 
 public class Cars {
-    Car car1;
-    Car car2;
-    Car car3;
+    Car carList;
 
-    public Cars(Car car1, Car car2, Car car3) {
-        this.car1 = car1;
-        this.car2 = car2;
-        this.car3 = car3;
+    public Cars(Car carList) {
+        this.carList = carList;
     }
 
-    public Car getCar1() {
-        return car1;
+    public Car getCarList() {
+        return carList;
     }
 
-    public Car getCar2() {
-        return car2;
+    Car cars  = new Car("입력", 0);
+
+    public List<Car> carList() {
+        List<Car> carList = List.of(
+                new Car(cars.carName(), cars.raceNumber()),
+                new Car(cars.carName(), cars.raceNumber()),
+                new Car(cars.carName(), cars.raceNumber()));
+
+        return carList;
     }
-
-    public Car getCar3() {
-        return car3;
-    }
-
-
-
 
 
 }

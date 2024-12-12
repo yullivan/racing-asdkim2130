@@ -16,3 +16,5 @@ car1에 String 자동차이름, int 레이싱점수
 레이싱 점수 >= 3일 때 + 1
 
 car1의 이름 입력 구현
+
+[name, raceNumber]인 리스트만들기
