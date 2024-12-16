@@ -9,12 +9,12 @@
 -------갈아 엎었어요------
 
 자동차 이름 따로, 레이싱 숫자 따로 구성하던 것에서 자동차 클래스에 name과 racingNumber를 묶는걸로
-car1에 String 자동차이름, int 레이싱점수
+car에 String 자동차이름, int 레이싱점수
 
 레이싱 점수 < 3일 때 + 0
 
 레이싱 점수 >= 3일 때 + 1
 
-car1의 이름 입력 구현
+car의 이름입력 구현
 
-[name, raceNumber]인 리스트만들기
+carList에 이름 넣기
