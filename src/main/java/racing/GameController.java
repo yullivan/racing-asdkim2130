@@ -1,5 +1,7 @@
 package racing;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class GameController {
@@ -28,5 +30,14 @@ public class GameController {
     }
 
 
+    // 게임을 돌리는 반복문, toString을 받아 출력
+    List<Car> carList = new ArrayList<>();
+    public void gamming (){
+        for (int i = 0; i < gameTires; i++) {
+            for (Car car : carList) {
+                car.raceNumber();
+            }System.out.println(toString());
+        }
+    }
 
 }
