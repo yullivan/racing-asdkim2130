@@ -32,6 +32,7 @@ public class GameController {
 
     // 게임을 돌리는 반복문, toString을 받아 출력
     List<Car> carList = new ArrayList<>();
+
     public void gamming (){
         for (int i = 0; i < gameTires; i++) {
             for (Car car : carList) {
@@ -40,4 +41,25 @@ public class GameController {
         }
     }
 
+
+
+    //제일 멀리 간 차 구하고 우승자 return
+    List<String> winCar = new ArrayList<>();
+    int theMostMove = 0;
+
+    public List<String> getWinCar (){
+        for (Car car : carList) {
+            if(car.getRaceNumber() > theMostMove){
+                theMostMove = car.getRaceNumber();
+                winCar.clear();
+                winCar.add(car.getCarName());
+            }else if(car.getRaceNumber() == theMostMove){
+                winCar.add(car.getCarName());
+            }
+        }
+        return winCar;
+    }
 }
+
+
+
